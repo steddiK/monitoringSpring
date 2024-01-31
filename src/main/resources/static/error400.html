@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Refresh Page</title>
+</head>
+<body>
+<h1>Auto Refresh Page Demo</h1>
+<div id="metricValue">Initial Value: Loading...</div>
+
+<script>
+    // Fonction pour actualiser la page
+    function refreshPage() {
+        location.reload(true); // Recharge la page en forçant la récupération à partir du serveur
+    }
+
+    // Actualise la page toutes les 5 secondes (5000 millisecondes)
+    setInterval(refreshPage, 5000);
+</script>
+</body>
+</html>
