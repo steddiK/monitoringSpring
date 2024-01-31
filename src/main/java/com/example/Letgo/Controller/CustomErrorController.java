@@ -2,7 +2,10 @@ package com.example.Letgo.Controller;
 
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.prometheus.PrometheusMeterRegistry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,6 +17,7 @@ public class CustomErrorController {
     private final Counter Erreur403;
     private final Counter Erreur404;
     private final Counter Erreur500;
+    Logger logger= LoggerFactory.getLogger(CustomErrorController.class);
     public CustomErrorController(PrometheusMeterRegistry registry) {
         this.Erreur400 = Counter.builder("Erreur400")
                 .description("Erreur_400")
@@ -33,15 +37,16 @@ public class CustomErrorController {
     }
 
     @GetMapping("/Error400")
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public void generateError400() {
+    public ResponseEntity<String> generateError400() {
         Erreur400.increment();
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("400 Error");
     }
 
     @GetMapping("/Error401")
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     public void generateError401() {
         Erreur401.increment();
+        throw new RuntimeException("Erreur 401 générée délibérément");
     }
 
     @GetMapping("/Error403")
@@ -60,6 +65,16 @@ public class CustomErrorController {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public void generateError500() {
         Erreur500.increment();
+    }
+
+    @GetMapping("/log")
+    public String Log(){
+        logger.trace("A TRACE Message");
+        logger.debug("A DEBUG Message");
+        logger.info("An INFO Message");
+        logger.warn("An WARN Message");
+        logger.error("An Error Message");
+        return "OK OK";
     }
 
 }
