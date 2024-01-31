@@ -1,11 +1,8 @@
 package com.example.Letgo.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
 import com.example.Letgo.Entity.Client;
 import com.example.Letgo.Service.ClientService;
-
 import java.util.List;
  
 @RestController
