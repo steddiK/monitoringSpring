@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
-
-    <appender name="METRICS" class="io.prometheus.client.logback.InstrumentedAppender" />
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <property name="LOG_FILE" value="D:\Utilisateurs\steddi.andritiana\Desktop\Letgo\myapplication.log"/>
+    <include resource="org/springframework/boot/logging/logback/file-appender.xml" />
 
     <root level="INFO">
-        <appender-ref ref="METRICS" />
+        <appender-ref ref="FILE" />
     </root>
 
 
