@@ -11,10 +11,10 @@ import java.util.List;
 public class ClientController {
 	@Autowired
 	private final ClientService clientService;
-	@GetMapping
-	public  String Personne() {
-		return "You are Welcome ";
-	}
+//	@GetMapping
+//	public  String Personne() {
+//		return "You are Welcome ";
+//	}
 
 	public ClientController(ClientService clientService) {
         this.clientService = clientService;
