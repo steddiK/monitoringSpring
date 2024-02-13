@@ -75,7 +75,7 @@ public class CustomErrorController {
     public void randomeo()  {
         Random random= new Random();
         int randomNbr=0;
-        for(int i=1;i<1000;i++){
+        for(int i=1;i<10;i++){
             randomNbr=random.nextInt(6)+1;
             try{
                 switch(randomNbr){
@@ -107,7 +107,7 @@ public class CustomErrorController {
     }
     public static List<String> readFromFile() {
         try {
-            Path path = Paths.get("D:\\Utilisateurs\\steddi.andritiana\\Desktop\\Letgo\\myapplication.log");
+            Path path = Paths.get("D:\\Utilisateurs\\steddi.andritiana\\Desktop\\Letgo\\logging\\myapplication.log");
             return Files.readAllLines(path);
         } catch (IOException e) {
             e.printStackTrace();
