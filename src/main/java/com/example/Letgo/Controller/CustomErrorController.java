@@ -75,8 +75,8 @@ public class CustomErrorController {
     public void randomeo()  {
         Random random= new Random();
         int randomNbr=0;
-        for(int i=1;i<10;i++){
-            randomNbr=random.nextInt(6)+1;
+        for(int i=1;i<100;i++){
+            randomNbr=random.nextInt(20)+1;
             try{
                 switch(randomNbr){
                     case 2:
