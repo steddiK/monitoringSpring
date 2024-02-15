@@ -26,12 +26,14 @@ public class LetgoApplication {
 		Client Steddi= new Client("Steddi","23");
 		Client Nombana= new Client("Nombana","20");
 		Client Rakoto= new Client("Rakoto","29");
+		Client Murphy= new Client("Murphy", "47");
 		
 		//Liste des clients
 		List<Client> clients= Arrays.asList(Steddi,Nombana,Rakoto);
 		CS.creer(Steddi);
 		CS.creer(Nombana);
 		CS.creer(Rakoto);
+		CS.creer(Murphy);
 		
 		Marchandises ovy= new Marchandises("ovy");
 		Marchandises karoty= new Marchandises("karoty");
@@ -47,6 +49,8 @@ public class LetgoApplication {
 		CS.Achat(Steddi,karoty);
 		CS.Achat(Steddi,vary);
 		CS.Achat(Rakoto,ovy);
+		CS.Achat(Murphy,vary);
+		CS.Achat(Murphy,atody);
 
 		//Validation des achats:
 		CR.saveAll(clients);
