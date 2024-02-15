@@ -25,18 +25,9 @@ public class ClientService {
 	@Autowired
 	MeterRegistry meterRegistry;
 	private final ClientRepository clientRepository;
-
-
 	public ClientService(ClientRepository clientRepository) {
 		this.clientRepository = clientRepository;
 	}
-
-/*	@GetMapping("/custom")
-//	public String customMetric(){
-//		meterRegistry.counter("tester_mon_app").increment();
-//		meterRegistry.gauge("tester_gauge_1_100",((new Random().nextInt(100)+1)));
-//		return "Success";
-//	}*/
 
 	@GetMapping("/erreur_400")
 	public void test(@RequestBody String requestBody){

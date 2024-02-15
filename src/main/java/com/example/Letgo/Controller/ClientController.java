@@ -11,21 +11,14 @@ import java.util.List;
 public class ClientController {
 	@Autowired
 	private final ClientService clientService;
-//	@GetMapping
-//	public  String Personne() {
-//		return "You are Welcome ";
-//	}
-
 	public ClientController(ClientService clientService) {
         this.clientService = clientService;
     }
-
 	@PostMapping( "/saveo")
 	public String creer(@RequestBody Client client) {
 		this.clientService.creer(client);
 		return "Client Enregistré avec succes";
 	}
-
 	@GetMapping("/rechercher")
 	public List<Client> rechercher(){
 		return this.clientService.rechercher();
