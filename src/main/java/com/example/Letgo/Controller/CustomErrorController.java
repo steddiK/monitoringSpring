@@ -95,7 +95,6 @@ public class CustomErrorController {
                         generateError500();
                         break;
                     default:
-                        System.out.println("zero error");
                         break;
 
                 }
