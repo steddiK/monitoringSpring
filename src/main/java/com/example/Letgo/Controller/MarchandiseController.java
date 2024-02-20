@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
-@RequestMapping("/march")
+@RequestMapping("/my_application")
 public class MarchandiseController {
 
     @Autowired
@@ -18,7 +18,7 @@ public class MarchandiseController {
         this.marchandiseServices = marchandiseServices;
     }
 
-    @GetMapping
+    @GetMapping("/march")
     public String welcome(){
         return "Welcome to Marchandise";
     }

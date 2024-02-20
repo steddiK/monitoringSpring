@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Random;
 
 @RestController
-@RequestMapping("")
+@RequestMapping("/my_application")
 public class CustomErrorController {
     Logger logger= LoggerFactory.getLogger(CustomErrorController.class);
     private final Counter Erreur400;
@@ -70,6 +70,11 @@ public class CustomErrorController {
     public ResponseEntity<String> generateError500() {
         Erreur500.increment();
         throw new RuntimeException(String.valueOf(HttpStatus.INTERNAL_SERVER_ERROR));
+    }
+    
+    @GetMapping("/")
+    public String accueil() {
+    	return "welcome";
     }
     @GetMapping("/runError")
     public void randomeo()  {
