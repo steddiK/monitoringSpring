@@ -76,6 +76,7 @@ public class CustomErrorController {
     public String accueil() {
     	return "welcome";
     }
+    
     @GetMapping("/runError")
     public void randomeo()  {
         Random random= new Random();
@@ -86,6 +87,7 @@ public class CustomErrorController {
                 switch(randomNbr){
                     case 2:
                         generateError400();
+                        logger.error("Erreur400");
                         break;
                     case 3:
                         generateError401();
@@ -109,6 +111,7 @@ public class CustomErrorController {
             }
         }
     }
+    
     public static List<String> readFromFile() {
         try {
             Path path = Paths.get("D:\\Utilisateurs\\steddi.andritiana\\Desktop\\Letgo\\logging\\myapplication.log");
@@ -147,7 +150,7 @@ public class CustomErrorController {
         } else {
             System.out.println("Erreur lors de la lecture du fichier");
         }
-        Path path = Paths.get("D:\\Utilisateurs\\steddi.andritiana\\Desktop\\Letgo\\myapplication.log");
+        Path path = Paths.get("D:\\Utilisateurs\\steddi.andritiana\\Desktop\\Letgo\\logging\\myapplication.log");
         Files.newBufferedWriter(path, StandardOpenOption.TRUNCATE_EXISTING);
     }
 

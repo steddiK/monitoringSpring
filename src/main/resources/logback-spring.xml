@@ -2,7 +2,7 @@
 <configuration>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
     <include resource="org/springframework/boot/logging/logback/defaults.xml" />
-    <property name="LOG_FILE" value="D:\Utilisateurs\steddi.andritiana\Desktop\Letgo"/>
+    <property name="LOG_FILE" value="D:\Utilisateurs\steddi.andritiana\Desktop\Letgo\logging\myapplication.log"/>
     <include resource="org/springframework/boot/logging/logback/file-appender.xml" />
 
     <root level="INFO">

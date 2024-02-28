@@ -1,0 +1,49 @@
+2024-02-28 14:19:12.498  INFO 4488 --- [main] com.example.Letgo.LetgoApplication       : Starting LetgoApplication using Java 17.0.9 on DPU197C1GW with PID 4488 (D:\Utilisateurs\steddi.andritiana\Desktop\Letgo\target\classes started by steddi.andritiana in D:\Utilisateurs\steddi.andritiana\Desktop\Letgo)
+2024-02-28 14:19:12.500  INFO 4488 --- [main] com.example.Letgo.LetgoApplication       : No active profile set, falling back to default profiles: default
+2024-02-28 14:19:13.193  INFO 4488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-28 14:19:13.236  INFO 4488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2024-02-28 14:19:13.745  INFO 4488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 2024 (http)
+2024-02-28 14:19:13.746  INFO 4488 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-02-28 14:19:13.746  INFO 4488 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-02-28 14:19:13.746  INFO 4488 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-02-28 14:19:13.751  INFO 4488 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-02-28 14:19:13.760  INFO 4488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-28 14:19:13.761  INFO 4488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-02-28 14:19:13.842  INFO 4488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-28 14:19:13.842  INFO 4488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1300 ms
+2024-02-28 14:19:14.105  INFO 4488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-28 14:19:14.148  INFO 4488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2024-02-28 14:19:14.269  INFO 4488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-02-28 14:19:14.358  INFO 4488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-28 14:19:14.654  INFO 4488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-28 14:19:14.678  INFO 4488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-02-28 14:19:15.240  INFO 4488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-28 14:19:15.249  INFO 4488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-28 14:19:15.564  WARN 4488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-28 14:19:15.899  INFO 4488 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-02-28 14:19:15.957  INFO 4488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2024 (http) with context path ''
+2024-02-28 14:19:15.967  INFO 4488 --- [main] com.example.Letgo.LetgoApplication       : Started LetgoApplication in 3.952 seconds (JVM running for 4.489)
+2024-02-28 14:19:19.299  INFO 4488 --- [http-nio-2024-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-28 14:19:19.300  INFO 4488 --- [http-nio-2024-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-28 14:19:19.301  INFO 4488 --- [http-nio-2024-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-28 14:19:33.041 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-02-28 14:19:33.042 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-02-28 14:19:33.042 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-02-28 14:19:33.042 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-02-28 14:19:33.045 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
