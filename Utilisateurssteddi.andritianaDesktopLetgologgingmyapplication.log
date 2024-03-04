@@ -1,49 +1,375 @@
-2024-02-28 14:19:12.498  INFO 4488 --- [main] com.example.Letgo.LetgoApplication       : Starting LetgoApplication using Java 17.0.9 on DPU197C1GW with PID 4488 (D:\Utilisateurs\steddi.andritiana\Desktop\Letgo\target\classes started by steddi.andritiana in D:\Utilisateurs\steddi.andritiana\Desktop\Letgo)
-2024-02-28 14:19:12.500  INFO 4488 --- [main] com.example.Letgo.LetgoApplication       : No active profile set, falling back to default profiles: default
-2024-02-28 14:19:13.193  INFO 4488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-02-28 14:19:13.236  INFO 4488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
-2024-02-28 14:19:13.745  INFO 4488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 2024 (http)
-2024-02-28 14:19:13.746  INFO 4488 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
-2024-02-28 14:19:13.746  INFO 4488 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-2024-02-28 14:19:13.746  INFO 4488 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2024-02-28 14:19:13.751  INFO 4488 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
-2024-02-28 14:19:13.760  INFO 4488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-02-28 14:19:13.761  INFO 4488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
-2024-02-28 14:19:13.842  INFO 4488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-02-28 14:19:13.842  INFO 4488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1300 ms
-2024-02-28 14:19:14.105  INFO 4488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-02-28 14:19:14.148  INFO 4488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
-2024-02-28 14:19:14.269  INFO 4488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-02-28 14:19:14.358  INFO 4488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-02-28 14:19:14.654  INFO 4488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-02-28 14:19:14.678  INFO 4488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2024-02-28 14:19:15.240  INFO 4488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-02-28 14:19:15.249  INFO 4488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-02-28 14:19:15.564  WARN 4488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-02-28 14:19:15.899  INFO 4488 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
-2024-02-28 14:19:15.957  INFO 4488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2024 (http) with context path ''
-2024-02-28 14:19:15.967  INFO 4488 --- [main] com.example.Letgo.LetgoApplication       : Started LetgoApplication in 3.952 seconds (JVM running for 4.489)
-2024-02-28 14:19:19.299  INFO 4488 --- [http-nio-2024-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-28 14:19:19.300  INFO 4488 --- [http-nio-2024-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-02-28 14:19:19.301  INFO 4488 --- [http-nio-2024-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-02-28 14:19:33.041 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
-2024-02-28 14:19:33.042 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
-2024-02-28 14:19:33.042 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
-2024-02-28 14:19:33.042 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
-2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
-2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
-2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
-2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
-2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
-2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
-2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
-2024-02-28 14:19:33.043 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
-2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
-2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
-2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
-2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
-2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
-2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
-2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
-2024-02-28 14:19:33.044 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
-2024-02-28 14:19:33.045 ERROR 4488 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:17:42.793  INFO 14960 --- [main] com.example.Letgo.LetgoApplication       : Starting LetgoApplication using Java 17.0.9 on DPU197C1GW with PID 14960 (D:\Utilisateurs\steddi.andritiana\Desktop\Letgo\target\classes started by steddi.andritiana in D:\Utilisateurs\steddi.andritiana\Desktop\Letgo)
+2024-03-04 08:17:42.805  INFO 14960 --- [main] com.example.Letgo.LetgoApplication       : No active profile set, falling back to default profiles: default
+2024-03-04 08:17:43.635  INFO 14960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-04 08:17:43.688  INFO 14960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2024-03-04 08:17:44.306  INFO 14960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 2024 (http)
+2024-03-04 08:17:44.307  INFO 14960 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-03-04 08:17:44.307  INFO 14960 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-03-04 08:17:44.307  INFO 14960 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-03-04 08:17:44.312  INFO 14960 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-03-04 08:17:44.323  INFO 14960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-04 08:17:44.324  INFO 14960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-03-04 08:17:44.407  INFO 14960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-04 08:17:44.407  INFO 14960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1542 ms
+2024-03-04 08:17:44.688  INFO 14960 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-04 08:17:44.748  INFO 14960 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2024-03-04 08:17:44.892  INFO 14960 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-04 08:17:44.990  INFO 14960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-04 08:17:45.280  INFO 14960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-04 08:17:45.309  INFO 14960 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-04 08:17:45.940  INFO 14960 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-04 08:17:45.948  INFO 14960 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-04 08:17:46.283  WARN 14960 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-04 08:17:46.634  INFO 14960 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-03-04 08:17:46.693  INFO 14960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2024 (http) with context path ''
+2024-03-04 08:17:46.703  INFO 14960 --- [main] com.example.Letgo.LetgoApplication       : Started LetgoApplication in 4.442 seconds (JVM running for 4.877)
+2024-03-04 08:17:49.249  INFO 14960 --- [http-nio-2024-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-04 08:17:49.250  INFO 14960 --- [http-nio-2024-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-04 08:17:49.252  INFO 14960 --- [http-nio-2024-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-04 08:19:45.590 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:19:45.590 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:19:45.591 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:19:45.591 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:19:45.591 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:19:45.592 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:19:45.592 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:19:45.592 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:19:45.592 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:19:45.592 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:19:45.592 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:19:45.592 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:19:45.593 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:19:45.593 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:19:45.593 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:19:45.593 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:19:45.593 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:19:45.594 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:19:45.594 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:19:45.594 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:19:45.594 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:21:06.474 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:21:06.475 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:21:06.475 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:21:06.475 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:21:06.475 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:21:06.475 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:21:06.475 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:21:06.475 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:21:06.476 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:21:06.476 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:21:06.476 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:21:06.476 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:21:06.476 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:21:06.477 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:21:06.477 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:21:06.477 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:21:06.477 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:21:06.477 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:21:06.477 ERROR 14960 --- [http-nio-2024-exec-9] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:24:31.275 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:24:31.276 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:24:31.276 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:24:31.276 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:24:31.276 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:24:31.277 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:24:31.277 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:24:31.277 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:24:31.277 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:24:31.277 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:24:31.277 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:24:31.278 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:24:31.278 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:24:31.278 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:24:31.278 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:24:31.278 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:24:31.278 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:24:31.278 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:24:31.278 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:24:31.278 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:24:31.278 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:24:31.279 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:24:31.279 ERROR 14960 --- [http-nio-2024-exec-5] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:57:31.728 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:57:31.729 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:57:31.729 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:57:31.729 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:57:31.729 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:57:31.729 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 08:57:31.729 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:57:31.729 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:57:31.729 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:57:31.729 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:57:31.729 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:57:31.730 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 08:57:31.730 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:57:31.730 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:57:31.730 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 08:57:31.730 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:57:31.730 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:57:31.730 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 08:57:31.730 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:57:31.730 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 08:57:31.730 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:04:07.590 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:04:07.590 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:04:07.590 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:04:07.591 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:04:07.592 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:04:07.592 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:04:07.592 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:04:07.592 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:04:07.592 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:04:07.592 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:04:07.592 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:04:07.592 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:11:37.781 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:11:37.781 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:11:37.781 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:11:37.782 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:11:37.782 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:11:37.783 ERROR 14960 --- [http-nio-2024-exec-3] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:16:47.822 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:16:47.822 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:16:47.822 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:16:47.822 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:16:47.822 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:16:47.822 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:16:47.823 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:16:47.824 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:16:47.824 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:16:47.824 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:16:47.824 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:16:47.824 ERROR 14960 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:22:21.901 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:22:21.901 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:22:21.901 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:22:21.902 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:22:21.902 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:22:21.902 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:22:21.902 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:22:21.902 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:22:21.902 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:22:21.902 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:22:21.902 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:22:21.902 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:22:21.903 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:22:21.904 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:22:21.904 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:22:21.904 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:22:21.904 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:22:21.904 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:22:21.904 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:22:21.904 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:22:21.904 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:22:21.904 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:22:21.904 ERROR 14960 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:54:28.865 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:54:28.865 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:54:28.865 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:54:28.866 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 09:54:28.867 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 09:54:28.867 ERROR 14960 --- [http-nio-2024-exec-4] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 10:47:48.775 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 10:47:48.776 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 10:47:48.776 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 10:47:48.776 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 10:47:48.776 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 10:47:48.776 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 10:47:48.777 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 10:47:48.964 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 10:47:48.964 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 10:47:48.964 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 10:47:48.965 ERROR 14960 --- [http-nio-2024-exec-2] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:03:16.420  WARN 14960 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m27s209ms101µs601ns).
+2024-03-04 13:20:42.379 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:20:42.379 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:20:42.379 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:20:42.380 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:20:42.380 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:20:42.380 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:20:42.380 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:20:42.380 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:20:42.380 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:20:42.380 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:20:42.380 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:20:42.380 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:20:42.380 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:20:42.381 ERROR 14960 --- [http-nio-2024-exec-10] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:26:47.105 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:26:47.105 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 500 INTERNAL_SERVER_ERROR
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:26:47.106 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:26:47.107 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:26:47.107 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:26:47.107 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:26:47.107 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:26:47.107 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:26:47.107 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:26:47.107 ERROR 14960 --- [http-nio-2024-exec-7] c.e.L.Controller.CustomErrorController   : 400 BAD_REQUEST
+2024-03-04 13:38:17.154  INFO 2572 --- [main] com.example.Letgo.LetgoApplication       : Starting LetgoApplication using Java 17.0.9 on DPU197C1GW with PID 2572 (D:\Utilisateurs\steddi.andritiana\Desktop\Letgo\target\classes started by steddi.andritiana in D:\Utilisateurs\steddi.andritiana\Desktop\Letgo)
+2024-03-04 13:38:17.157  INFO 2572 --- [main] com.example.Letgo.LetgoApplication       : No active profile set, falling back to default profiles: default
+2024-03-04 13:38:17.914  INFO 2572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-04 13:38:17.963  INFO 2572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2024-03-04 13:38:18.608  INFO 2572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 2024 (http)
+2024-03-04 13:38:18.610  INFO 2572 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-03-04 13:38:18.610  INFO 2572 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-03-04 13:38:18.610  INFO 2572 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-03-04 13:38:18.614  INFO 2572 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-03-04 13:38:18.624  INFO 2572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-04 13:38:18.624  INFO 2572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-03-04 13:38:18.703  INFO 2572 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-04 13:38:18.703  INFO 2572 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1498 ms
+2024-03-04 13:38:18.964  INFO 2572 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-04 13:38:19.007  INFO 2572 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.33
+2024-03-04 13:38:19.123  INFO 2572 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-04 13:38:19.214  INFO 2572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-04 13:38:19.565  INFO 2572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-04 13:38:19.593  INFO 2572 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-04 13:38:20.263  INFO 2572 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-04 13:38:20.271  INFO 2572 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-04 13:38:20.590  WARN 2572 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-04 13:38:20.939  INFO 2572 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-03-04 13:38:20.975  INFO 2572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2024 (http) with context path ''
+2024-03-04 13:38:20.985  INFO 2572 --- [main] com.example.Letgo.LetgoApplication       : Started LetgoApplication in 4.321 seconds (JVM running for 4.872)
+2024-03-04 13:38:32.350  INFO 2572 --- [http-nio-2024-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-04 13:38:32.351  INFO 2572 --- [http-nio-2024-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-04 13:38:32.352  INFO 2572 --- [http-nio-2024-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-04 13:38:32.378 ERROR 2572 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:38:32.378 ERROR 2572 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
+2024-03-04 13:41:29.941 ERROR 2572 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND

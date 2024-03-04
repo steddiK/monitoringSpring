@@ -2,7 +2,6 @@ package com.example.Letgo.Controller;
 
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.prometheus.PrometheusMeterRegistry;
-import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -81,7 +80,7 @@ public class CustomErrorController {
     public void randomeo()  {
         Random random= new Random();
         int randomNbr=0;
-        for(int i=1;i<100;i++){
+        for(int i=1;i<10;i++){
             randomNbr=random.nextInt(20)+1;
             try{
                 switch(randomNbr){
