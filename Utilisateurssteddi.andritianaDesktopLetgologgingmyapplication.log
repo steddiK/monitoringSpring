@@ -373,3 +373,5 @@
 2024-03-04 13:38:32.378 ERROR 2572 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
 2024-03-04 13:38:32.378 ERROR 2572 --- [http-nio-2024-exec-1] c.e.L.Controller.CustomErrorController   : 403 FORBIDDEN
 2024-03-04 13:41:29.941 ERROR 2572 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
+2024-03-04 13:41:29.941 ERROR 2572 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 401 UNAUTHORIZED
+2024-03-04 13:41:29.941 ERROR 2572 --- [http-nio-2024-exec-6] c.e.L.Controller.CustomErrorController   : 404 NOT_FOUND
