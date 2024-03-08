@@ -17,7 +17,6 @@ import java.util.List;
 import java.util.Random;
 
 @RestController
-@RequestMapping("/my_application")
 public class CustomErrorController {
     Logger logger= LoggerFactory.getLogger(CustomErrorController.class);
     private final Counter Erreur400;

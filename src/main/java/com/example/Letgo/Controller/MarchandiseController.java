@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
-@RequestMapping("/my_application")
 public class MarchandiseController {
 
     @Autowired

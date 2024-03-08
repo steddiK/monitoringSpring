@@ -7,6 +7,7 @@ import com.example.Letgo.Service.ClientService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import com.example.Letgo.Entity.Client;
@@ -15,7 +16,7 @@ import com.example.Letgo.Repository.ClientRepository;
 import com.example.Letgo.Repository.MarchandiseRepository;
 
 @SpringBootApplication
-public class LetgoApplication {
+public class LetgoApplication{
 	
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(LetgoApplication.class);

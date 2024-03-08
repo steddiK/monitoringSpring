@@ -6,8 +6,6 @@ import com.example.Letgo.Service.ClientService;
 import java.util.List;
  
 @RestController
-@RequestMapping("/my_application")
- 
 public class ClientController {
 	@Autowired
 	private final ClientService clientService;
